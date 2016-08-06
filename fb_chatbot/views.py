@@ -7,6 +7,16 @@ from django.http.response import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 
+quotes_string = '''
+There is no charge for awesomeness... or attractiveness.;Kung Fu Panda;http://www.google.co.in/search?ie=UTF-8&q=kung+fu+panda+awesomeness
+Any fool can write code that a computer can understand. Good programmers write code that humans can understand.;Martin Fowle;http://thc.org/root/phun/unmaintain.html
+He was so deadly, in fact, that his enemies would go blind from over-exposure to pure awesomeness!;Kung Fu Panda;
+One often meets his destiny on the road he takes to avoid it.;Kung Fu Panda;
+The world is moved along, not only by the mighty shoves of its heroes, but also by the aggregate of the tiny pushes of each honest worker.;Helen Keller;
+'''
+
+quotes_arr = quotes_string.split('\n')
+
 PAGE_ACCESS_TOKEN ='EAATD9Q2WbQgBAMyb3chgCdZAokOx0Wn4iV3mgPQoN4uLF7CwYJg2HfNHNUyhvpQKNf0r6kQClgL2NRnPPAxl5db1n6ZBeZA1FyZBcks5zGUDaVZBlDQsasTZBKV1it9sOB3t2xxbtODr3mPNuAIAdsmltk3WdAg87Y1TC0AK5H5AZDZD'
 
 def post_facebook_message(fbid, recevied_message):

@@ -1,9 +1,7 @@
 """
 Django settings for chatbot project.
-
 For more information on this file, see
 https://docs.djangoproject.com/en/1.7/topics/settings/
-
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.7/ref/settings/
 """
@@ -17,7 +15,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'b5&c3s!pn1$n@3^phewr65ze@5mufqxdd^^2f0%qqvcae$3^pp'
+SECRET_KEY = '*ffe#do!79(-4zc-pshb^*&6bf18-z+8&(tudenhh&m+@(u0o%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -80,5 +78,4 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
-
 STATIC_URL = '/static/'

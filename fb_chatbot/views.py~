@@ -1,12 +1,12 @@
+import json, requests, random, re
+from pprint import pprint
+
 from django.shortcuts import render
 from django.http import HttpResponse
 
 from django.views import generic
-from django.http.response import HttpResponse
-
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
-
 
 PAGE_ACCESS_TOKEN='EAATD9Q2WbQgBAMyb3chgCdZAokOx0Wn4iV3mgPQoN4uLF7CwYJg2HfNHNUyhvpQKNf0r6kQClgL2NRnPPAxl5db1n6ZBeZA1FyZBcks5zGUDaVZBlDQsasTZBKV1it9sOB3t2xxbtODr3mPNuAIAdsmltk3WdAg87Y1TC0AK5H5AZDZD'
 VERIFY_TOKEN = '8447789934'
@@ -19,9 +19,9 @@ def post_facebook_message(fbid, recevied_message):
         user_details_url = "https://graph.facebook.com/v2.6/%s"%fbid 
         user_details_params = {'fields':'first_name,last_name,profile_pic', 'access_token':PAGE_ACCESS_TOKEN} 
         user_details = requests.get(user_details_url, user_details_params).json() 
-        joke_text = 'Yo '+user_details['first_name']+'..! ' + reply_text
+        joke_text = 'BOT: '+user_details['first_name']+'..! ' + reply_text
     except:
-        joke_text = 'Yo ' + reply_text
+        joke_text = 'BOT: ' + reply_text
 
     
                    
@@ -64,9 +64,9 @@ class MyQuoteBotView(generic.View):
 
 
 
-	def index(request):
-    	print test()
-    	return HttpResponse("Hello World")
+def index(request):
+    print test()
+    return HttpResponse("Hello World")
 
-	def test():
-		post_facebook_message('abhishek.sukumar.1','test message')
+def test():
+    post_facebook_message('abhishek.sukumar.1','test message')

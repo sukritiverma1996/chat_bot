@@ -64,9 +64,9 @@ class MyQuoteBotView(generic.View):
 
 
 
-	def index(request):
-    	print test()
-    	return HttpResponse("Hello World")
+def index(request):
+    print test()
+    return HttpResponse("Hello World")
 
-	def test():
-		post_facebook_message('abhishek.sukumar.1','test message')
+def test():
+    post_facebook_message('abhishek.sukumar.1','test message')

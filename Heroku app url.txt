@@ -1,3 +1,0 @@
-https://vast-waters-34824.herokuapp.com/
-
-https://git.heroku.com/vast-waters-34824.git

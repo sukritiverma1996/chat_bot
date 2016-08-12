@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 import json, requests, random, re
 from pprint import pprint
 
@@ -65,54 +66,54 @@ def post_facebook_message(fbid, recevied_message):
     except:
         joke_text = 'Yo ' + reply_text
 
-    joke_text = quote_search(recevied_message)
-    response_text = recevied_message +' :)'
+    #joke_text = quote_search(recevied_message)
+    #response_text = recevied_message +' :)'
 
-    '''message_object = {
-        "attachment":{
-          "type":"image",
-          "payload":{
-            #"url":"http://thecatapi.com/api/images/get?format=src&type=png"
-            "url" : "http://worldversus.com/img/ironman.jpg"
-          }
-        }
-    }
+    #message_object = {
+    #     "attachment":{
+    #       "type":"image",
+    #       "payload":{
+    #         #"url":"http://thecatapi.com/api/images/get?format=src&type=png"
+    #         "url" : "http://worldversus.com/img/ironman.jpg"
+    #       }
+    #     }
+    # }
 
-    message_object3 = {
-        "message":{
-            "attachment":{
-                "type":"image",
-                "payload":{
-                    "url":"http://worldversus.com/img/ironman.jpg"
-                }
-            }
-        }
-    }
+    # message_object3 = {
+    #     "message":{
+    #         "attachment":{
+    #             "type":"image",
+    #             "payload":{
+    #                 "url":"http://worldversus.com/img/ironman.jpg"
+    #             }
+    #         }
+    #     }
+    # }
 
-    message_object2 = {
-        "text": joke_text
-        }
+    # message_object2 = {
+    #     "text": joke_text
+    #     }
                    
-    post_message_url = 'https://graph.facebook.com/v2.6/me/messages?access_token=%s'%PAGE_ACCESS_TOKEN
-    response_msg = json.dumps({"recipient":{"id":fbid}, "message":{"text":joke_text}})
-    response_msg2 = json.dumps({"recipient":{"id":fbid}, "message":{"text":response_text}})
+    # post_message_url = 'https://graph.facebook.com/v2.6/me/messages?access_token=%s'%PAGE_ACCESS_TOKEN
+    # response_msg = json.dumps({"recipient":{"id":fbid}, "message":{"text":joke_text}})
+    # response_msg2 = json.dumps({"recipient":{"id":fbid}, "message":{"text":response_text}})
     
-    response_msg3 = json.dumps(
-        {"recipient":{"id":fbid}, 
-            "message":{
-                "attachment":{
-                    "type":"image",
-                    "payload":{
-                        "url":"http://worldversus.com/img/ironman.jpg"
-                    }
-                }
-            }
-     })
+    # response_msg3 = json.dumps(
+    #     {"recipient":{"id":fbid}, 
+    #         "message":{
+    #             "attachment":{
+    #                 "type":"image",
+    #                 "payload":{
+    #                     "url":"http://worldversus.com/img/ironman.jpg"
+    #                 }
+    #             }
+    #         }
+    #  })
     
-    status = requests.post(post_message_url, headers={"Content-Type": "application/json"},data=response_msg)
-    status = requests.post(post_message_url, headers={"Content-Type": "application/json"},data=response_msg3)
+    # status = requests.post(post_message_url, headers={"Content-Type": "application/json"},data=response_msg)
+    # status = requests.post(post_message_url, headers={"Content-Type": "application/json"},data=response_msg3)
     
-    pprint(status.json())'''
+    # pprint(status.json())
 
 
 class MyQuoteBotView(generic.View):

@@ -11,7 +11,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 
 PAGE_ACCESS_TOKEN='EAATD9Q2WbQgBAMyb3chgCdZAokOx0Wn4iV3mgPQoN4uLF7CwYJg2HfNHNUyhvpQKNf0r6kQClgL2NRnPPAxl5db1n6ZBeZA1FyZBcks5zGUDaVZBlDQsasTZBKV1it9sOB3t2xxbtODr3mPNuAIAdsmltk3WdAg87Y1TC0AK5H5AZDZD'
-VERIFY_TOKEN = '8447789934'
+VERIFY_TOKEN = '8373961119'
 
 quotes_arr = [["Life isn’t about getting and having, it’s about giving and being.", "Kevin Kruse"],
 ["Whatever the mind of man can conceive and believe, it can achieve.", "Napoleon Hill"],

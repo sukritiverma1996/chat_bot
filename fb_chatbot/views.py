@@ -150,7 +150,7 @@ class MyQuoteBotView(generic.View):
 
 
 def index(request):
-print test()
+    print test()
     print quote_search('z123io90')
     return HttpResponse("Hello World" + quote_search('*'))
 

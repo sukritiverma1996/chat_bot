@@ -68,7 +68,7 @@ def post_facebook_message(fbid, recevied_message):
     joke_text = quote_search(recevied_message)
     response_text = recevied_message +' :)'
 
-    message_object = {
+    '''message_object = {
         "attachment":{
           "type":"image",
           "payload":{
@@ -112,7 +112,7 @@ def post_facebook_message(fbid, recevied_message):
     status = requests.post(post_message_url, headers={"Content-Type": "application/json"},data=response_msg)
     status = requests.post(post_message_url, headers={"Content-Type": "application/json"},data=response_msg3)
     
-    pprint(status.json())
+    pprint(status.json())'''
 
 
 class MyQuoteBotView(generic.View):

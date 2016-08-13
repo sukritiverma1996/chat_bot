@@ -1,2 +1,2 @@
 # chat_bot
-A Chat Bot fot Facebook Messenger using Django Framework
+A Chat Bot for Facebook Messenger developed using Django Framework with the webhook hosted on Heroku
